@@ -1,0 +1,12 @@
+<form #loginForm="ngForm">
+  <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input #id type="text" placeholder="Enter Username" required>
+  
+      <label for="psw"><b>Password</b></label>
+      <input #username type="password" placeholder="Enter Password" name="psw" required>
+  
+      <button type="submit" onclick="location.href ='../dashboard/users'">Login</button>
+      <button type="button" onclick="location.href ='../create/user'">Register</button>
+    </div>
+</form>

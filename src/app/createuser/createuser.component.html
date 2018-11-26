@@ -1,0 +1,13 @@
+<form #createUserForm="ngForm">
+  <div class="container">
+    <h1>Registration</h1>
+    <input #id type="text" placeholder="Id" required/>
+    <input #username type="text" placeholder="Username" required/>
+    <input #password type="text" placeholder="Password" required/>
+    <input #email type="text" placeholder="Email" required/>
+    <input #accessType type="text" placeholder="Access Type" required/>
+    <input #accessTypeNo type="text" placeholder="Access Type No." required/>
+    <button type="submit" class="btn btn-primary" (click)="addUser(id.value, username.value, password.value, 
+  email.value, accessType.value, accessTypeNo.value)">Submit</button>
+  </div>
+</form>

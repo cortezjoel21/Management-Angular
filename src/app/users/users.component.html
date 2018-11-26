@@ -1,0 +1,23 @@
+<form #dashboardForm="ngForm">
+  <div class="container">
+    <h1>Home</h1>
+    <table>
+      <tr>
+        <th>Id</th>
+        <th>Username</th>
+        <th>Email</th>
+        <th>Access Type</th>
+        <th></th>
+        <th></th>
+      </tr>
+      <tr *ngFor="let user of users">
+        <td><a routerLink="/details/{{user.id}}">{{user.id}}</a></td>
+        <td>{{user.username}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.accessType}}</td>
+        <td><a onclick="location.href ='details/:id'"><i class="material-icons">update</i></a></td>
+        <td><i class="material-icons">delete</i></td>
+      </tr>
+    </table>
+  </div>
+</form>

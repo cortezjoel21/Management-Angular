@@ -1,0 +1,16 @@
+<form #detailsForm="ngForm">
+  <div class="container">
+    <p>
+      <label>id: </label><input #id value="{{user.email}}" /><br />
+    <!--  <label>username: </label><input *ngFor="let user of user" #username value="{{user.username}}" /><br />
+      <label>email: </label><input #email *ngFor="let user of user" value="{{user.email}}" /><br />
+      <label>access type: </label><input #accessType *ngFor="let user of user" value="{{user.accessType}}" /><br />
+      <label>access typer no.: </label><input #accessTypeNo *ngFor="let user of user" value="{{user.accessTypeNo}}" /><br />
+    
+    -->
+    </p>
+    <button type="submit" class="btn btn-primary" (click)="updateUser(id.value, username.value, 
+    email.value, accessType.value, accessTypeNo.value)">update</button>
+    <button type="submit" class="btn btn-primary">back</button>
+  </div>
+</form>
